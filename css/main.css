@@ -1,0 +1,19 @@
+.column {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.good {
+  color: blue;
+  font-weight: bold;
+}
+
+.bad {
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  width:75%;
+}
