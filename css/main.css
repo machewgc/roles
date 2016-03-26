@@ -15,6 +15,28 @@
 }
 
 img {
-  width:200px;;
+  width: 200px;;
   height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    width: 50%;
+  }
+
+  img {
+    width: 150px;
+    height: 225px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .column {
+    width: 100%;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
 }
