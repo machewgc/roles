@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Roles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="A site about the game Avalon">
+    <meta name="author" content="Matt Cannon and Matt Lee">
+    <meta name="robots" content="index, follow">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Bootstrap Core CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="css/override.css" type="text/css">
+
+    <!-- Conditional comment containing JS files for IE6 - 8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-            <img class="center-block" src="img/merlin.png">
-            <p class="text-center">Merlin</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-            <img class="center-block" src="img/perceval.png">
-            <p class="text-center">Perceval</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <img class="center-block" src="img/genericgood.png">
-          <p class="text-center">Generic Good</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <img class="center-block" src="img/assassin.png">
-          <p class="text-center">Assassin</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <img class="center-block" src="img/mordred.png">
-          <p class="text-center">Mordred</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <img class="center-block" src="img/genericbad.png">
-          <p class="text-center">Generic Evil</p>
-        </div>
-      </div>
-    </div>
+      <div id="theCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#theCarousel" data-slide-to="0"></li>
+          <li data-target="#theCarousel" data-slide-to="1"></li>
+          <li data-target="#theCarousel" data-slide-to="2"></li>
+          <li data-target="#theCarousel" data-slide-to="3"></li>
+          <li data-target="#theCarousel" data-slide-to="4"></li>
+          <li data-target="#theCarousel" data-slide-to="5"></li>
+        </ol>
 
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/merlin.png" class="img-responsive center-block"/>
+          </div>
+
+          <div class="item">
+            <img src="img/perceval.png" class="img-responsive center-block"/>
+          </div>
+
+          <div class="item">
+            <img src="img/genericgood.png" class="img-responsive center-block"/>
+          </div>
+
+          <div class="item">
+            <img src="img/assassin.png" class="img-responsive center-block"/>
+          </div>
+
+          <div class="item">
+            <img src="img/mordred.png" class="img-responsive center-block"/>
+          </div>
+
+          <div class="item">
+            <img src="img/genericbad.png" class="img-responsive center-block"/>
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
   </body>
 </html>
