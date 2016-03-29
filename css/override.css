@@ -8,5 +8,13 @@ p:not(.intro) {
   margin-right: 60px;
 }
 body {
-  background-color: white;
+  background-color: #3380CC;
+}
+img {
+  width: 500px;
+
+  border-color: gray;
+}
+.evil {
+  background-color: #A64D4D;
 }
